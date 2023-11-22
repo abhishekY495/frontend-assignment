@@ -14,7 +14,7 @@ const userSlice = createSlice({
         userName,
         password,
       };
-      state.push(newUser);
+      state.usersDB.push(newUser);
     },
     loginUser: (state, action) => {
       const { userName, password } = action.payload;
